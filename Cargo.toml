@@ -1,0 +1,11 @@
+[package]
+name = "wfs_test"
+version = "0.1.0"
+edition = "2024"
+description = "PoC for laoding WFS geometries and WMS images"
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+geozero = { version = "0.14", features = ["with-geojson", "with-csv"] }
+geo-types = "0.7"
